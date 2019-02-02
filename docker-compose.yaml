@@ -2,7 +2,7 @@ version: '3'
 
 services:
 
-  geospatial_data_science:
+  game_of_thrones_data_science:
     container_name: game_of_thrones_data_jupyter
     image: maciomatheus/jupyter_notebook_data_science
     environment:
@@ -15,5 +15,5 @@ services:
     - 6007:6006
     - 5007:5000
     volumes:
-    - ./notebooks:/home/jovyan/work
+    - ./:/home/jovyan/work
     command: start-notebook.sh --NotebookApp.token=''
